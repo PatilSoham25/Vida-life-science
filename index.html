@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vida Life Sciences</title>
+
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://unpkg.com/three"></script>
+        <script src="https://unpkg.com/globe.gl"></script>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css" />
+    
+    </head>
+    <body>
+
+        <nav id="navbar" class="navbar">
+            <div class="container">
+
+            <!-- LOGO -->
+            <a href="#" class="logo">
+                <img src="/DWI/Projects/VidaFinal/public/logo-removebg-preview.png" alt="Vida Life Sciences" />
+            </a>
+
+            <!-- DESKTOP MENU -->
+            <div class="desktop-menu">
+                
+                <!-- ABOUT -->
+                <div class="dropdown">
+                    <button>About ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#">Corporate Profile</a>
+                        <a href="#">Certificates & Quality</a>
+                        <a href="#">Board of Directors</a>
+                        <a href="#">Our History</a>
+                    </div>
+                </div>
+
+                <!-- PRODUCTS -->
+                <div class="dropdown">
+                    <button>Products ▼</button>
+                    <div class="dropdown-content">
+                        <a href="#">Sterilizer</a>
+                        <a href="#">CSSD Equipment’s</a>
+                        <a href="#">CSSD SS Furniture</a>
+                        <a href="#">Automatic Bed Pan Washer</a>
+                        <a href="#">Manual Bed Pan Washer</a>
+                        <a href="#">Hospital SS Furniture</a>
+                    </div>
+                </div>
+
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- RIGHT BUTTON -->
+            <div class="right-btn">
+                <a href="#" class="cta">Get in Touch →</a>
+            </div>
+
+            <!-- MOBILE TOGGLE -->
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+
+            </div>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Corporate Profile</a>
+            <a href="#">Certificates & Quality</a>
+            <a href="#">Board of Directors</a>
+            <a href="#">Our History</a>
+
+            <a href="#">Sterilizer</a>
+            <a href="#">CSSD Equipment’s</a>
+            <a href="#">CSSD SS Furniture</a>
+            <a href="#">Automatic Bed Pan Washer</a>
+            <a href="#">Manual Bed Pan Washer</a>
+            <a href="#">Hospital SS Furniture</a>
+
+            <a href="#">Contact</a>
+
+            <a href="#" class="mobile-cta">Contact Us Now</a>
+        </div>
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <!-- VIDEO BACKGROUND -->
+            <div class="hero-video">
+                <video autoplay loop muted playsinline>
+                <source src="/DWI/Projects/VidaFinal/public/bgvideo.mp4" type="video/mp4">
+                <source src="bgvideo.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay-dark"></div>
+                <div class="overlay-gradient"></div>
+            </div>
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+                
+                <!-- Badge -->
+                <div class="hero-badge fade-up delay-1">
+                Licensed Manufacturer.
+                </div>
+
+                <!-- Heading -->
+                <h1 class="hero-title fade-up delay-2">
+                Sterility is not a Service.<br>
+                <span class="gradient-text">
+                    It is a Precision.
+                </span>
+                </h1>
+
+                <!-- Subtext -->
+                <p class="hero-subtext fade-up delay-3">
+                Regulated by <strong>Indian Medical Devices Rules</strong>.
+                We don't just clean instruments; we manufacture safety standards for 300+ hospitals across India.
+                </p>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator fade-in delay-4">
+                <span>Scroll to Explore</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- FOUNDATION SECTION -->
+        <section class="foundation-section">
+
+            <div class="foundation-container">
+
+                <!-- LEFT CONTENT -->
+                <div class="foundation-text">
+
+                    <div class="foundation-tag reveal-left">
+                        <span class="line"></span>
+                        <span class="tag-text">Who We Are</span>
+                    </div>
+
+                    <h2 class="foundation-title reveal-up">
+                        The Gold Standard for <br>
+                        <span>Medical Safety.</span>
+                    </h2>
+
+                    <p class="foundation-description reveal-up">
+                        Vida Life Science is not just a sterilization service; we are a critical extension of your hospital’s infection control protocol.
+                        <br><br>
+                        We operate India's most advanced centralized sterilization hubs, ensuring that every surgical instrument entering your OT is biologically safe, legally compliant, and functionally perfect.
+                    </p>
+
+                    <!-- FEATURES -->
+                    <div class="foundation-features">
+                        <div class="feature reveal-left delay-1">
+                        <div class="icon">✔</div>
+                        <span>Market Leadership in Sterile Processing</span>
+                        </div>
+                        <div class="feature reveal-left delay-2">
+                        <div class="icon">✔</div>
+                        <span>ISO Class 8 Cleanroom Infrastructure</span>
+                        </div>
+                        <div class="feature reveal-left delay-3">
+                        <div class="icon">✔</div>
+                        <span>Partner to 150+ Hospitals & Surgical Centers</span>
+                        </div>
+                        <div class="feature reveal-left delay-4">
+                        <div class="icon">✔</div>
+                        <span>End-to-End Digital Traceability</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <button class="foundation-btn reveal-up">
+                        Read Corporate Profile
+                        <span class="arrow">→</span>
+                    </button>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+                <div class="foundation-image-wrapper">
+
+                <div class="image-container reveal-img">
+
+                    <img src="/DWI/Projects/VidaFinal/public/hospital10.jpg" alt="Sterile Facility">
+
+                    <!-- SHUTTER EFFECT -->
+                    <div class="shutter"></div>
+
+                    <div class="image-overlay"></div>
+                </div>
+
+                <!-- FLOATING CARD -->
+                <div class="floating-stat reveal-float">
+                    <div class="stat-icon">⚡</div>
+                    <div>
+                    <p class="stat-small">Daily Capacity</p>
+                    <p class="stat-big">50,000+ Instruments</p>
+                    </div>
+                </div>
+
+                <!-- Decorative Dots -->
+                <div class="dots"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Infrastructure section -->
+        <section class="infrastructure">
+            <div class="containerC">
+
+                <!-- HEADER -->
+                <div class="section-header reveal">
+                <div>
+                    <div class="tag">
+                    <div class="pulse-dot"></div>
+                    Manufacturing Unit: Online
+                    </div>
+
+                    <h2>
+                    The Core of <br>
+                    <span class="gradient-text">Precision.</span>
+                    </h2>
+                </div>
+
+                <p class="section-desc">
+                    A 30000+ sq. ft. advanced fabrication facility dedicated to creating medical-grade sterilization infrastructure.
+                </p>
+                </div>
+
+                <!-- GRID -->
+                <div class="gridC">
+
+                <!-- BLOCK 1 -->
+                <div class="cardC main-block reveal">
+                    <img src="/DWI/Projects/VidaFinal/public/images/factoryfloor infrastructure.avif" alt="Factory Floor">
+                    <div class="overlay"></div>
+                    <div class="main-content">
+                    <div class="badge">Main Assembly</div>
+                    <h3>In-House Fabrication</h3>
+                    <p>CNC cutting, bending, and TIG welding stations.</p>
+                    </div>
+                </div>
+
+                <!-- BLOCK 2 -->
+                <div class="cardC stat-block reveal">
+                    <div>
+                    <i data-lucide="layers"></i>
+                    </div>
+                    <div>
+                    <div class="statC-number">30k<span>+</span></div>
+                    <div class="statC-desc">
+                        Dedicated manufacturing space ensuring complete control over production timelines and quality.
+                    </div>
+                    </div>
+                </div>
+
+                <!-- BLOCK 3 -->
+                <div class="cardC reveal">
+                    <i data-lucide="settings"></i>
+                    <h3>SS 304 / 316L</h3>
+                    <p class="stat-desc">
+                    Certified medical-grade stainless steel for corrosion resistance and longevity.
+                    </p>
+                </div>
+
+                <!-- BLOCK 4 -->
+                <div class="cardC reveal">
+                    <i data-lucide="cpu"></i>
+                    <h3>Smart Automation</h3>
+                    <p class="stat-desc">
+                    PLC-based automation integration for precise sterilization cycles and data logging.
+                    </p>
+                </div>
+
+                <!-- BLOCK 5 -->
+                <div class="cardC quality-block reveal">
+                    <div class="quality-text">
+                    <i data-lucide="microscope"></i>
+                    <h3>Quality Assurance Lab</h3>
+                    <p class="stat-desc">
+                        Every unit undergoes pressure testing, leak detection, and calibration ensuring ISO 13485 compliance.
+                    </p>
+                    </div>
+                    <div class="quality-image">
+                    <img src="/DWI/Projects/VidaFinal/public/hospital5.jpg" alt="Quality Lab">
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------------------------- -->
+        <section class="workflow">
+            <div class="containerStage">
+
+                <!-- Header -->
+                <div class="top-header">
+                    <div>
+                        <span class="badgeStage">THE PROTOCOL</span>
+                        <h2>The CSSD Workflow Stages:</h2>
+                    </div>
+
+                    <div class="controls">
+                        <button id="prev" class="circle-btn">‹</button>
+                        <button id="pause" class="circle-btn">❚❚</button>
+                        <button id="next" class="circle-btn active">›</button>
+                    </div>
+                </div>
+
+                <!-- Slider -->
+                <div class="slider">
+                    <div id="slides"></div>
+                </div>
+
+            </div>
+        </section>
+        <!-- --------------------- -->
+        <section class="globe-section">
+
+            <!-- ⭐ Stars -->
+            <div class="stars" id="stars"></div>
+
+            <!-- Blue Glow -->
+            <div class="glow"></div>
+
+            <!-- Heading -->
+            <div class="heading">
+                <div class="badge">★ Live Global Network</div>
+                <h2>
+                Connecting
+                <span>The World.</span>
+                </h2>
+            </div>
+
+            <!-- Globe -->
+            <div id="globeViz"></div>
+
+            <!-- Bottom Stats -->
+            <div class="stats">
+                <div class="stat-box">
+                <p>Total Regions</p>
+                <h3>12+</h3>
+                </div>
+                <div class="stat-box">
+                <p>Headquarters</p>
+                <h3>Pune, India</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- --------------------------- -->
+        <section class="sectionNum">
+
+            <div class="statsNum">
+
+                <div class="statNum">
+                    <div class="statNum-label">Partner Hospitals</div>
+                    <div class="statNum-number" data-target="300" data-suffix="+">0</div>
+                    <div class="statNum-desc">
+                        Serving Government, Trust, and Private institutions.
+                    </div>
+                </div>
+
+                <div class="statNum">
+                    <div class="statNum-label">Geographic Reach</div>
+                    <div class="statNum-number" data-target="15" data-suffix="+">0</div>
+                    <div class="statNum-desc">
+                        Operational presence across major Indian states.
+                    </div>
+                </div>
+
+                <div class="statNum">
+                    <div class="statNum-label">Daily Impact</div>
+                    <div class="statNum-number" data-target="50" data-suffix="k">0</div>
+                    <div class="statNum-desc">
+                        Surgical instruments processed sterile every single day.
+                    </div>
+                </div>
+
+            </div>
+
+          
+            <div class="cta1">
+                <div>
+                    <h2>
+                        Ready to upgrade your <br>
+                        <span>Infection Control Standards?</span>
+                    </h2>
+                    <p>
+                        Consult with our biomedical engineers to audit your current CSSD setup.
+                        We provide end-to-end support, from layout design to regulatory certification.
+                    </p>
+                </div>
+
+                <a href="tel:+919689491632" class="cta1-btn">
+                📞 Schedule an Audit
+                </a>
+            </div>
+
+        </section>
+        <!-- -------------------------------- -->
+
+        <footer class="footer">
+
+            <div class="scan-border"></div>
+
+            <div class="container1">
+
+            <div class="grid1 fade-up">
+
+                <!-- COLUMN 1 -->
+                <div>
+                <img src="/DWI/Projects/VidaFinal/public/images/logo_bg_removed.png" alt="Logo" style="height:50px;margin-bottom:20px;">
+                <p style="font-size:14px;line-height:1.6;">
+                    Precision-engineered CSSD solutions and medical sterilization systems.
+                    Partnering with 300+ institutions to ensure patient safety through certified technology.
+                </p>
+
+                <div class="status">
+                    <div class="dot"></div>
+                    Systems Operational
+                </div>
+                </div>
+
+                <!-- COLUMN 2 -->
+                <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Corporate Profile</a></li>
+                    <li><a href="#">Our Products</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                </div>
+
+                <!-- COLUMN 3 -->
+                <div>
+                <h3>Product Range</h3>
+                <ul>
+                    <li><a href="#">Sterilizer</a></li>
+                    <li><a href="#">CSSD Equipment’s</a></li>
+                    <li><a href="#">CSSD SS Furniture</a></li>
+                    <li><a href="#">Automatic Bed Pan Washer</a></li>
+                    <li><a href="#">Manual Bed Pan Washer</a></li>
+                    <li><a href="#">Hospital SS Furniture</a></li>
+                </ul>
+                </div>
+
+                <!-- COLUMN 4 -->
+                <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Office Address - Bunglow No.4, 2nd Floor, Shriyash, Pune 411016</li>
+                    <li><a href="tel:+919689491632">+91 9689491632</a></li>
+                    <li><a href="mailto:info@vidalife.com">info@vidalife.com</a></li>
+                </ul>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="bottom fade-up">
+                <div>
+                © <span id="year"></span> Vida Life Sciences Pvt. Ltd. All rights reserved.
+                | Designed by <span style="color:#0ea5e9;font-weight:bold;">DW Innovation Pvt. Ltd</span>
+                </div>
+
+                <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                </div>
+            </div>
+
+            </div>
+            </footer>
+                
+        <script src="index.js"></script>
+    </body>
+</html>
