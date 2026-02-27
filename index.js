@@ -1,6 +1,6 @@
 const navbar = document.getElementById("navbar");
 const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenu = document.getElementById("mobileMenuNav");
 
 /* Scroll Effect */
 window.addEventListener("scroll", () => {
@@ -58,155 +58,192 @@ lucide.createIcons();
 
 /*----------------------------- */
 const steps = [
+  {
+    id:"01",
+    title:"Collection & Sorting:",
+    desc:"Used instruments are gathered from clinical areas, sorted by type, and transported to the CSSD receiving (dirty) area.",
+    icon:"waves",
+    bg:"#eff6ff",
+    color:"#2563eb",
+    img:"/DWI/Projects/VidaFinal/public/step1.png"
+  },
+  {
+    id:"02",
+    title:"Pre-Disinfection:",
+    desc:"Immediate rinsing or soaking at the point of use and in CSSD to prevent organic matter from drying on instruments.",
+    icon:"zap",
+    bg:"#fffbeb",
+    color:"#f59e0b",
+    img:"/DWI/Projects/VidaFinal/public/step2.png"
+  },
+  {
+    id:"03",
+    title:"Cleaning (Decontamination:)",
+    desc:"A) Manual Cleaning: Disassembly and brushing instruments in enzymatic/detergent solutions.B) Automated Cleaning: Using washer-disinfectors with ultrasonic cleaning to remove biofilms.C) Rinsing: Thorough rinsing with clean, treated water.",
+    icon:"scan",
+    bg:"#faf5ff",
+    color:"#9333ea",
+    img:"/DWI/Projects/VidaFinal/public/step3.png"
+  },
+  {
+    id:"04",
+    title:"Drying:",
+    desc:"Instruments are dried using air or specialized cabinets to prevent corrosion and contamination.",
+    icon:"thermometer",
+    bg:"#fff1f2",
+    color:"#e11d48",
+    img:"/DWI/Projects/VidaFinal/public/step4.png"
+  },
+  {
+    id:"05",
+    title:"Inspection & Maintenance:",
+    desc:"Checking for cleanliness, functionality (hinges, sharpness), damage, and applying lubricant if needed. Items failing inspection are rejected.",
+    icon:"package-check",
+    bg:"#ecfdf5",
+    color:"#059669",
+    img:"/DWI/Projects/VidaFinal/public/step5.png"
+  },
     {
-        id:"01",
-        title:"Collection & Sorting:",
-        desc:"Used instruments are gathered, sorted, and transported to the CSSD dirty area.",
-        icon:"waves",
-        bg:"#eff6ff",
-        color:"#2563eb",
-        img:"/DWI/Projects/VidaFinal/public/step1.png"
-    },
+    id:"06",
+    title:"Packaging:",
+    desc:"Items are wrapped (often double-wrapped) in sterile barrier materials and labeled for traceability.",
+    icon:"package-check",
+    bg:"#ecfdf5",
+    color:"#059669",
+    img:"/DWI/Projects/VidaFinal/public/step6.png"
+  },
     {
-        id:"02",
-        title:"Pre-Disinfection:",
-        desc:"Immediate rinsing prevents organic matter from drying on instruments.",
-        icon:"zap",
-        bg:"#fffbeb",
-        color:"#f59e0b",
-        img:"/DWI/Projects/VidaFinal/public/step2.png"
-    },
+    id:"07",
+    title:"Sterilization:",
+    desc:"Using methods like saturated steam (autoclave), ethylene oxide (ETO), or hydrogen peroxide plasma to kill all microorganisms.",
+    icon:"package-check",
+    bg:"#ecfdf5",
+    color:"#059669",
+    img:"/DWI/Projects/VidaFinal/public/step7.png"
+  },
     {
-        id:"03",
-        title:"Cleaning (Decontamination):",
-        desc:"A) Manual Cleaning: Disassembly and brushing instruments in enzymatic/detergent solutions.B) Automated Cleaning: Using washer-disinfectors with ultrasonic cleaning to remove biofilms.C) Rinsing: Thorough rinsing with clean, treated water.",
-        icon:"scan",
-        bg:"#faf5ff",
-        color:"#9333ea",
-        img:"/DWI/Projects/VidaFinal/public/step3.png"
-    },
+    id:"08",
+    title:"Sterile Storage:",
+    desc:"Storing packaged, sterile items in designated clean areas until needed, maintaining sterility.",
+    icon:"package-check",
+    bg:"#ecfdf5",
+    color:"#059669",
+    img:"/DWI/Projects/VidaFinal/public/step8.png"
+  },
     {
-        id:"04",
-        title:"Drying:",
-        desc:"Instruments are dried using air systems to prevent corrosion.",
-        icon:"thermometer",
-        bg:"#fff1f2",
-        color:"#e11d48",
-        img:"/DWI/Projects/VidaFinal/public/step4.png"
-    },
-    {
-        id:"05",
-        title:"Inspection & Maintenance:",
-        desc:"Checking for cleanliness, functionality (hinges, sharpness), damage, and applying lubricant if needed. Items failing inspection are rejected.",
-        icon:"package-check",
-        bg:"#ecfdf5",
-        color:"#059669",
-        img:"/DWI/Projects/VidaFinal/public/step5.png"
-    },
-    {
-        id:"06",
-        title:"Packaging:",
-        desc:"Items are wrapped (often double-wrapped) in sterile barrier materials and labeled for traceability.",
-        icon:"package-check",
-        bg:"#ecfdf5",
-        color:"#059669",
-        img:"/DWI/Projects/VidaFinal/public/step6.png"
-    },
-    {
-        id:"07",
-        title:"Sterilization:",
-        desc:"Using methods like saturated steam (autoclave), ethylene oxide (ETO), or hydrogen peroxide plasma to kill all microorganisms.",
-        icon:"package-check",
-        bg:"#ecfdf5",
-        color:"#059669",
-        img:"/DWI/Projects/VidaFinal/public/step7.png"
-    },
-    {
-        id:"08",
-        title:"Sterile Storage:",
-        desc:"Storing packaged, sterile items in designated clean areas until needed, maintaining sterility.",
-        icon:"package-check",
-        bg:"#ecfdf5",
-        color:"#059669",
-        img:"/DWI/Projects/VidaFinal/public/step8.png"
-    },
-    {
-        id:"09",
-        title:"Distribution:",
-        desc:"Delivering sterile supplies to operating rooms and other departments for patient care.",
-        icon:"package-check",
-        bg:"#ecfdf5",
-        color:"#059669",
-        img:"/DWI/Projects/VidaFinal/public/step9.png"
-    }
+    id:"09",
+    title:"Distribution:",
+    desc:"Delivering sterile supplies to operating rooms and other departments for patient care.",
+    icon:"package-check",
+    bg:"#ecfdf5",
+    color:"#059669",
+    img:"/DWI/Projects/VidaFinal/public/step9.png"
+  }
 ];
 
-const slidesContainer = document.getElementById("slides");
-let current = 0;
-let interval;
-let paused = false;
+const carousel = document.getElementById("carouselStage");
+const dotsContainer = document.getElementById("dotsStage");
 
-/* Create Slides */
-steps.forEach((step) => {
+let activeIndex = 0;
+let interval;
+let isPaused = false;
+
+/* ========================= */
+/* CREATE SLIDES */
+/* ========================= */
+
+steps.forEach((step,index)=>{
   const slide = document.createElement("div");
-  slide.classList.add("slide");
+  slide.className="slideStage";
+  if(index===0) slide.classList.add("activeStage");
 
   slide.innerHTML = `
-    <img src="${step.img}" />
-    <div class="slide-content">
-      <div class="big-number">${step.id}</div>
-      <div class="icon-box">📦</div>
-      <h3>${step.title}</h3>
+    <div class="slideStage-image">
+      <img src="${step.img}" alt="${step.title}">
+    </div>
+    <div class="slideStage-content">
+      <div class="stepStage-id">${step.id}</div>
+      <div class="iconStage-box" style="background:${step.bg}; color:${step.color}">
+        <i data-lucide="${step.icon}"></i>
+      </div>
+      <h4>${step.title}</h4>
       <p>${step.desc}</p>
-      <div class="progress">
-        <div class="progress-bar"></div>
+      <div class="progressStage">
+        <div class="progressStage-bar"></div>
       </div>
     </div>
   `;
+  carousel.appendChild(slide);
 
-  slidesContainer.appendChild(slide);
+  const dot=document.createElement("button");
+  if(index===0) dot.classList.add("activeStage");
+  dot.addEventListener("click",()=>goToSlide(index));
+  dotsContainer.appendChild(dot);
 });
 
-const slides = document.querySelectorAll(".slide");
+lucide.createIcons();
 
-function showSlide(index) {
-  slides.forEach(s => s.classList.remove("active"));
-  current = index;
-  slides[current].classList.add("active");
+/* ========================= */
+/* FUNCTIONS */
+/* ========================= */
 
-  const bar = slides[current].querySelector(".progress-bar");
-  bar.style.width = "0%";
-  setTimeout(() => {
-    bar.style.width = "100%";
-  }, 50);
+function showSlide(index){
+  const slides=document.querySelectorAll(".slideStage");
+  const dots=document.querySelectorAll(".dotsStage button");
+
+  slides.forEach(s=>s.classList.remove("activeStage"));
+  dots.forEach(d=>d.classList.remove("activeStage"));
+
+  slides[index].classList.add("activeStage");
+  dots[index].classList.add("activeStage");
 }
 
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  showSlide(current);
+function goToSlide(index){
+  activeIndex=index;
+  showSlide(activeIndex);
+  resetAutoPlay();
 }
 
-function prevSlide() {
-  current = (current - 1 + slides.length) % slides.length;
-  showSlide(current);
+function nextSlide(){
+  activeIndex=(activeIndex+1)%steps.length;
+  showSlide(activeIndex);
 }
 
-document.getElementById("next").onclick = nextSlide;
-document.getElementById("prev").onclick = prevSlide;
+function prevSlide(){
+  activeIndex=(activeIndex-1+steps.length)%steps.length;
+  showSlide(activeIndex);
+}
 
-document.getElementById("pause").onclick = function () {
-  paused = !paused;
-  this.innerHTML = paused ? "▶" : "❚❚";
-  if (paused) clearInterval(interval);
-  else autoPlay();
+/* ========================= */
+/* AUTOPLAY */
+/* ========================= */
+
+function startAutoPlay(){
+  interval=setInterval(()=>{
+    if(!isPaused) nextSlide();
+  },5000);
+}
+
+function resetAutoPlay(){
+  clearInterval(interval);
+  startAutoPlay();
+}
+
+startAutoPlay();
+
+/* ========================= */
+/* CONTROLS */
+/* ========================= */
+
+document.getElementById("nextStage").onclick=()=>{nextSlide(); resetAutoPlay();};
+document.getElementById("prevStage").onclick=()=>{prevSlide(); resetAutoPlay();};
+
+document.getElementById("pauseStage").onclick=()=>{
+  isPaused=!isPaused;
+  document.getElementById("pauseStage").innerHTML = 
+    isPaused ? '<i data-lucide="play"></i>' : '<i data-lucide="pauseStage"></i>';
+  lucide.createIcons();
 };
-
-function autoPlay() {
-  interval = setInterval(nextSlide, 5000);
-}
-
-showSlide(0);
-autoPlay();
 
 /*---------------------------- */
 // Locations
